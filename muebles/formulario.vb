@@ -8,7 +8,6 @@
         panel_insumos.Visible = False
         panel_produccion.Visible = False
         panel_ventas.Visible = False
-        panel_cuentas.Visible = False
     End Sub
 
     Private Sub showSubmenu(submenu As Panel)
@@ -46,7 +45,7 @@
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         hideSubmenu()
-        login.Show()
+
 
     End Sub
 
@@ -70,9 +69,6 @@
         hideSubmenu()
     End Sub
 
-    Private Sub boton_cuentas_Click(sender As Object, e As EventArgs) Handles boton_cuentas.Click
-        showSubmenu(panel_cuentas)
-    End Sub
 
     Private currentform As Form = Nothing
     Private Sub abrirpanelhijo(childform As Form)
@@ -89,4 +85,7 @@
 
     End Sub
 
+    Private Sub panel_hijo_Paint(sender As Object, e As PaintEventArgs) Handles panel_hijo.Paint
+
+    End Sub
 End Class

@@ -24,11 +24,7 @@ Partial Class formulario_principal
     Private Sub InitializeComponent()
         Me.panel_hijo = New System.Windows.Forms.Panel()
         Me.Panel_lateral = New System.Windows.Forms.Panel()
-        Me.panel_cuentas = New System.Windows.Forms.Panel()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button13 = New System.Windows.Forms.Button()
-        Me.boton_cuentas = New System.Windows.Forms.Button()
+        Me.botoncuentas = New FontAwesome.Sharp.IconButton()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.panel_ventas = New System.Windows.Forms.Panel()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -48,7 +44,6 @@ Partial Class formulario_principal
         Me.panel_logo = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel_lateral.SuspendLayout()
-        Me.panel_cuentas.SuspendLayout()
         Me.panel_ventas.SuspendLayout()
         Me.panel_produccion.SuspendLayout()
         Me.panel_insumos.SuspendLayout()
@@ -73,8 +68,7 @@ Partial Class formulario_principal
         Me.Panel_lateral.BackColor = System.Drawing.SystemColors.Info
         Me.Panel_lateral.BackgroundImage = Global.muebles.My.Resources.Resources.Sin_título_8
         Me.Panel_lateral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel_lateral.Controls.Add(Me.panel_cuentas)
-        Me.Panel_lateral.Controls.Add(Me.boton_cuentas)
+        Me.Panel_lateral.Controls.Add(Me.botoncuentas)
         Me.Panel_lateral.Controls.Add(Me.Button10)
         Me.Panel_lateral.Controls.Add(Me.panel_ventas)
         Me.Panel_lateral.Controls.Add(Me.btn_ventas)
@@ -89,86 +83,29 @@ Partial Class formulario_principal
         Me.Panel_lateral.Size = New System.Drawing.Size(220, 796)
         Me.Panel_lateral.TabIndex = 0
         '
-        'panel_cuentas
+        'botoncuentas
         '
-        Me.panel_cuentas.BackColor = System.Drawing.Color.LemonChiffon
-        Me.panel_cuentas.Controls.Add(Me.Button11)
-        Me.panel_cuentas.Controls.Add(Me.Button12)
-        Me.panel_cuentas.Controls.Add(Me.Button13)
-        Me.panel_cuentas.Dock = System.Windows.Forms.DockStyle.Top
-        Me.panel_cuentas.Location = New System.Drawing.Point(0, 739)
-        Me.panel_cuentas.Name = "panel_cuentas"
-        Me.panel_cuentas.Size = New System.Drawing.Size(199, 131)
-        Me.panel_cuentas.TabIndex = 9
-        '
-        'Button11
-        '
-        Me.Button11.BackColor = System.Drawing.SystemColors.Info
-        Me.Button11.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button11.FlatAppearance.BorderSize = 0
-        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button11.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button11.ForeColor = System.Drawing.Color.Goldenrod
-        Me.Button11.Location = New System.Drawing.Point(0, 80)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.Button11.Size = New System.Drawing.Size(199, 40)
-        Me.Button11.TabIndex = 2
-        Me.Button11.Text = "Button11"
-        Me.Button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button11.UseVisualStyleBackColor = False
-        '
-        'Button12
-        '
-        Me.Button12.BackColor = System.Drawing.SystemColors.Info
-        Me.Button12.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button12.FlatAppearance.BorderSize = 0
-        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button12.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.ForeColor = System.Drawing.Color.Goldenrod
-        Me.Button12.Location = New System.Drawing.Point(0, 40)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.Button12.Size = New System.Drawing.Size(199, 40)
-        Me.Button12.TabIndex = 1
-        Me.Button12.Text = "Button12"
-        Me.Button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button12.UseVisualStyleBackColor = False
-        '
-        'Button13
-        '
-        Me.Button13.BackColor = System.Drawing.SystemColors.Info
-        Me.Button13.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button13.FlatAppearance.BorderSize = 0
-        Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button13.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button13.ForeColor = System.Drawing.Color.Goldenrod
-        Me.Button13.Location = New System.Drawing.Point(0, 0)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.Button13.Size = New System.Drawing.Size(199, 40)
-        Me.Button13.TabIndex = 0
-        Me.Button13.Text = "Button13"
-        Me.Button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button13.UseVisualStyleBackColor = False
-        '
-        'boton_cuentas
-        '
-        Me.boton_cuentas.BackColor = System.Drawing.Color.Transparent
-        Me.boton_cuentas.Dock = System.Windows.Forms.DockStyle.Top
-        Me.boton_cuentas.FlatAppearance.BorderSize = 0
-        Me.boton_cuentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Wheat
-        Me.boton_cuentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.boton_cuentas.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.boton_cuentas.ForeColor = System.Drawing.Color.DimGray
-        Me.boton_cuentas.Location = New System.Drawing.Point(0, 694)
-        Me.boton_cuentas.Name = "boton_cuentas"
-        Me.boton_cuentas.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.boton_cuentas.Size = New System.Drawing.Size(199, 45)
-        Me.boton_cuentas.TabIndex = 8
-        Me.boton_cuentas.Text = "Cuentas"
-        Me.boton_cuentas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.boton_cuentas.UseVisualStyleBackColor = False
+        Me.botoncuentas.BackColor = System.Drawing.Color.Transparent
+        Me.botoncuentas.Dock = System.Windows.Forms.DockStyle.Top
+        Me.botoncuentas.FlatAppearance.BorderSize = 0
+        Me.botoncuentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.botoncuentas.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.botoncuentas.Font = New System.Drawing.Font("Arial", 10.8!)
+        Me.botoncuentas.ForeColor = System.Drawing.Color.DimGray
+        Me.botoncuentas.IconChar = FontAwesome.Sharp.IconChar.Users
+        Me.botoncuentas.IconColor = System.Drawing.Color.BurlyWood
+        Me.botoncuentas.IconSize = 30
+        Me.botoncuentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.botoncuentas.Location = New System.Drawing.Point(0, 694)
+        Me.botoncuentas.Name = "botoncuentas"
+        Me.botoncuentas.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.botoncuentas.Rotation = 0R
+        Me.botoncuentas.Size = New System.Drawing.Size(220, 45)
+        Me.botoncuentas.TabIndex = 9
+        Me.botoncuentas.Text = "Cuentas"
+        Me.botoncuentas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.botoncuentas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.botoncuentas.UseVisualStyleBackColor = False
         '
         'Button10
         '
@@ -182,7 +119,7 @@ Partial Class formulario_principal
         Me.Button10.Location = New System.Drawing.Point(0, 649)
         Me.Button10.Name = "Button10"
         Me.Button10.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.Button10.Size = New System.Drawing.Size(199, 45)
+        Me.Button10.Size = New System.Drawing.Size(220, 45)
         Me.Button10.TabIndex = 7
         Me.Button10.Text = "Gastos"
         Me.Button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -197,7 +134,7 @@ Partial Class formulario_principal
         Me.panel_ventas.Dock = System.Windows.Forms.DockStyle.Top
         Me.panel_ventas.Location = New System.Drawing.Point(0, 518)
         Me.panel_ventas.Name = "panel_ventas"
-        Me.panel_ventas.Size = New System.Drawing.Size(199, 131)
+        Me.panel_ventas.Size = New System.Drawing.Size(220, 131)
         Me.panel_ventas.TabIndex = 6
         '
         'Button4
@@ -211,7 +148,7 @@ Partial Class formulario_principal
         Me.Button4.Location = New System.Drawing.Point(0, 80)
         Me.Button4.Name = "Button4"
         Me.Button4.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.Button4.Size = New System.Drawing.Size(199, 40)
+        Me.Button4.Size = New System.Drawing.Size(220, 40)
         Me.Button4.TabIndex = 2
         Me.Button4.Text = "Button4"
         Me.Button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -228,7 +165,7 @@ Partial Class formulario_principal
         Me.Button8.Location = New System.Drawing.Point(0, 40)
         Me.Button8.Name = "Button8"
         Me.Button8.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.Button8.Size = New System.Drawing.Size(199, 40)
+        Me.Button8.Size = New System.Drawing.Size(220, 40)
         Me.Button8.TabIndex = 1
         Me.Button8.Text = "Button8"
         Me.Button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -245,7 +182,7 @@ Partial Class formulario_principal
         Me.Button9.Location = New System.Drawing.Point(0, 0)
         Me.Button9.Name = "Button9"
         Me.Button9.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.Button9.Size = New System.Drawing.Size(199, 40)
+        Me.Button9.Size = New System.Drawing.Size(220, 40)
         Me.Button9.TabIndex = 0
         Me.Button9.Text = "Button9"
         Me.Button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -263,7 +200,7 @@ Partial Class formulario_principal
         Me.btn_ventas.Location = New System.Drawing.Point(0, 473)
         Me.btn_ventas.Name = "btn_ventas"
         Me.btn_ventas.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.btn_ventas.Size = New System.Drawing.Size(199, 45)
+        Me.btn_ventas.Size = New System.Drawing.Size(220, 45)
         Me.btn_ventas.TabIndex = 5
         Me.btn_ventas.Text = "Ventas"
         Me.btn_ventas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -278,7 +215,7 @@ Partial Class formulario_principal
         Me.panel_produccion.Dock = System.Windows.Forms.DockStyle.Top
         Me.panel_produccion.Location = New System.Drawing.Point(0, 342)
         Me.panel_produccion.Name = "panel_produccion"
-        Me.panel_produccion.Size = New System.Drawing.Size(199, 131)
+        Me.panel_produccion.Size = New System.Drawing.Size(220, 131)
         Me.panel_produccion.TabIndex = 4
         '
         'Button5
@@ -292,7 +229,7 @@ Partial Class formulario_principal
         Me.Button5.Location = New System.Drawing.Point(0, 80)
         Me.Button5.Name = "Button5"
         Me.Button5.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.Button5.Size = New System.Drawing.Size(199, 40)
+        Me.Button5.Size = New System.Drawing.Size(220, 40)
         Me.Button5.TabIndex = 2
         Me.Button5.Text = "Button5"
         Me.Button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -309,7 +246,7 @@ Partial Class formulario_principal
         Me.Button6.Location = New System.Drawing.Point(0, 40)
         Me.Button6.Name = "Button6"
         Me.Button6.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.Button6.Size = New System.Drawing.Size(199, 40)
+        Me.Button6.Size = New System.Drawing.Size(220, 40)
         Me.Button6.TabIndex = 1
         Me.Button6.Text = "Button6"
         Me.Button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -326,7 +263,7 @@ Partial Class formulario_principal
         Me.Button7.Location = New System.Drawing.Point(0, 0)
         Me.Button7.Name = "Button7"
         Me.Button7.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.Button7.Size = New System.Drawing.Size(199, 40)
+        Me.Button7.Size = New System.Drawing.Size(220, 40)
         Me.Button7.TabIndex = 0
         Me.Button7.Text = "Button7"
         Me.Button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -344,7 +281,7 @@ Partial Class formulario_principal
         Me.boton_produccion.Location = New System.Drawing.Point(0, 297)
         Me.boton_produccion.Name = "boton_produccion"
         Me.boton_produccion.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.boton_produccion.Size = New System.Drawing.Size(199, 45)
+        Me.boton_produccion.Size = New System.Drawing.Size(220, 45)
         Me.boton_produccion.TabIndex = 3
         Me.boton_produccion.Text = "Produccion"
         Me.boton_produccion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -359,7 +296,7 @@ Partial Class formulario_principal
         Me.panel_insumos.Dock = System.Windows.Forms.DockStyle.Top
         Me.panel_insumos.Location = New System.Drawing.Point(0, 166)
         Me.panel_insumos.Name = "panel_insumos"
-        Me.panel_insumos.Size = New System.Drawing.Size(199, 131)
+        Me.panel_insumos.Size = New System.Drawing.Size(220, 131)
         Me.panel_insumos.TabIndex = 2
         '
         'Button3
@@ -373,7 +310,7 @@ Partial Class formulario_principal
         Me.Button3.Location = New System.Drawing.Point(0, 80)
         Me.Button3.Name = "Button3"
         Me.Button3.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.Button3.Size = New System.Drawing.Size(199, 40)
+        Me.Button3.Size = New System.Drawing.Size(220, 40)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "Control inventario"
         Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -390,7 +327,7 @@ Partial Class formulario_principal
         Me.Button2.Location = New System.Drawing.Point(0, 40)
         Me.Button2.Name = "Button2"
         Me.Button2.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.Button2.Size = New System.Drawing.Size(199, 40)
+        Me.Button2.Size = New System.Drawing.Size(220, 40)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Registro proveedores"
         Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -407,7 +344,7 @@ Partial Class formulario_principal
         Me.Button1.Location = New System.Drawing.Point(0, 0)
         Me.Button1.Name = "Button1"
         Me.Button1.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.Button1.Size = New System.Drawing.Size(199, 40)
+        Me.Button1.Size = New System.Drawing.Size(220, 40)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Administrar insumos"
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -425,7 +362,7 @@ Partial Class formulario_principal
         Me.boton_insumos.Location = New System.Drawing.Point(0, 121)
         Me.boton_insumos.Name = "boton_insumos"
         Me.boton_insumos.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.boton_insumos.Size = New System.Drawing.Size(199, 45)
+        Me.boton_insumos.Size = New System.Drawing.Size(220, 45)
         Me.boton_insumos.TabIndex = 1
         Me.boton_insumos.Text = "Materiales"
         Me.boton_insumos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -437,7 +374,7 @@ Partial Class formulario_principal
         Me.panel_logo.Dock = System.Windows.Forms.DockStyle.Top
         Me.panel_logo.Location = New System.Drawing.Point(0, 0)
         Me.panel_logo.Name = "panel_logo"
-        Me.panel_logo.Size = New System.Drawing.Size(199, 121)
+        Me.panel_logo.Size = New System.Drawing.Size(220, 121)
         Me.panel_logo.TabIndex = 0
         '
         'PictureBox1
@@ -463,7 +400,6 @@ Partial Class formulario_principal
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.Panel_lateral.ResumeLayout(False)
-        Me.panel_cuentas.ResumeLayout(False)
         Me.panel_ventas.ResumeLayout(False)
         Me.panel_produccion.ResumeLayout(False)
         Me.panel_insumos.ResumeLayout(False)
@@ -491,11 +427,7 @@ Partial Class formulario_principal
     Friend WithEvents Button7 As Button
     Friend WithEvents boton_produccion As Button
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents boton_cuentas As Button
     Friend WithEvents Button10 As Button
     Friend WithEvents panel_hijo As Panel
-    Friend WithEvents panel_cuentas As Panel
-    Friend WithEvents Button11 As Button
-    Friend WithEvents Button12 As Button
-    Friend WithEvents Button13 As Button
+    Friend WithEvents botoncuentas As FontAwesome.Sharp.IconButton
 End Class
