@@ -1,0 +1,32 @@
+C:\Users\Cristobal\source\repos\muebles\muebles\bin\Debug\muebles.exe.config
+C:\Users\Cristobal\source\repos\muebles\muebles\bin\Debug\muebles.exe
+C:\Users\Cristobal\source\repos\muebles\muebles\bin\Debug\muebles.pdb
+C:\Users\Cristobal\source\repos\muebles\muebles\bin\Debug\muebles.xml
+C:\Users\Cristobal\source\repos\muebles\muebles\obj\Debug\muebles.vbprojAssemblyReference.cache
+C:\Users\Cristobal\source\repos\muebles\muebles\obj\Debug\muebles.Resources.resources
+C:\Users\Cristobal\source\repos\muebles\muebles\obj\Debug\muebles.vbproj.GenerateResource.cache
+C:\Users\Cristobal\source\repos\muebles\muebles\obj\Debug\muebles.vbproj.CoreCompileInputs.cache
+C:\Users\Cristobal\source\repos\muebles\muebles\obj\Debug\muebles.exe
+C:\Users\Cristobal\source\repos\muebles\muebles\obj\Debug\muebles.xml
+C:\Users\Cristobal\source\repos\muebles\muebles\obj\Debug\muebles.pdb
+C:\Users\Cristobal\source\repos\muebles\muebles\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Cristobal\source\repos\muebles\muebles\obj\Debug\muebles.vbproj.CopyComplete
+C:\Users\Cristobal\source\repos\muebles\muebles\obj\Debug\muebles.insumos.resources
+C:\Users\Cristobal\source\repos\muebles\muebles\obj\Debug\muebles.formulario_principal.resources
+C:\Users\Cristobal\source\repos\muebles\muebles\obj\Debug\muebles.login.resources
+C:\Users\Eliana Gonzalez\Desktop\Muebles Hogar - Práctica\muebles\muebles\bin\Debug\muebles.exe.config
+C:\Users\Eliana Gonzalez\Desktop\Muebles Hogar - Práctica\muebles\muebles\bin\Debug\muebles.exe
+C:\Users\Eliana Gonzalez\Desktop\Muebles Hogar - Práctica\muebles\muebles\bin\Debug\muebles.pdb
+C:\Users\Eliana Gonzalez\Desktop\Muebles Hogar - Práctica\muebles\muebles\bin\Debug\muebles.xml
+C:\Users\Eliana Gonzalez\Desktop\Muebles Hogar - Práctica\muebles\muebles\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Eliana Gonzalez\Desktop\Muebles Hogar - Práctica\muebles\muebles\obj\Debug\muebles.vbprojAssemblyReference.cache
+C:\Users\Eliana Gonzalez\Desktop\Muebles Hogar - Práctica\muebles\muebles\obj\Debug\muebles.formulario_principal.resources
+C:\Users\Eliana Gonzalez\Desktop\Muebles Hogar - Práctica\muebles\muebles\obj\Debug\muebles.insumos.resources
+C:\Users\Eliana Gonzalez\Desktop\Muebles Hogar - Práctica\muebles\muebles\obj\Debug\muebles.login.resources
+C:\Users\Eliana Gonzalez\Desktop\Muebles Hogar - Práctica\muebles\muebles\obj\Debug\muebles.Resources.resources
+C:\Users\Eliana Gonzalez\Desktop\Muebles Hogar - Práctica\muebles\muebles\obj\Debug\muebles.vbproj.GenerateResource.cache
+C:\Users\Eliana Gonzalez\Desktop\Muebles Hogar - Práctica\muebles\muebles\obj\Debug\muebles.vbproj.CoreCompileInputs.cache
+C:\Users\Eliana Gonzalez\Desktop\Muebles Hogar - Práctica\muebles\muebles\obj\Debug\muebles.vbproj.CopyComplete
+C:\Users\Eliana Gonzalez\Desktop\Muebles Hogar - Práctica\muebles\muebles\obj\Debug\muebles.exe
+C:\Users\Eliana Gonzalez\Desktop\Muebles Hogar - Práctica\muebles\muebles\obj\Debug\muebles.xml
+C:\Users\Eliana Gonzalez\Desktop\Muebles Hogar - Práctica\muebles\muebles\obj\Debug\muebles.pdb
