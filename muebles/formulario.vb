@@ -6,8 +6,7 @@
 
     Private Sub hideSubmenu()
         panel_insumos.Visible = False
-        panel_produccion.Visible = False
-        panel_ventas.Visible = False
+
     End Sub
 
     Private Sub showSubmenu(submenu As Panel)
@@ -20,48 +19,26 @@
 
     End Sub
 
-    Private Sub boton_insumos_Click(sender As Object, e As EventArgs) Handles boton_insumos.Click
-        showSubmenu(panel_insumos)
 
-    End Sub
-
-    Private Sub boton_produccion_Click(sender As Object, e As EventArgs) Handles boton_produccion.Click
-        showSubmenu(panel_produccion)
-
-
-
-
-    End Sub
-
-    Private Sub btn_ventas_Click(sender As Object, e As EventArgs) Handles btn_ventas.Click
-        showSubmenu(panel_ventas)
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        hideSubmenu()
-        abrirpanelhijo(New insumos())
-
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
         hideSubmenu()
 
 
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         hideSubmenu()
     End Sub
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+    Private Sub Button7_Click(sender As Object, e As EventArgs)
         hideSubmenu()
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs)
         hideSubmenu()
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+    Private Sub Button5_Click(sender As Object, e As EventArgs)
         hideSubmenu()
     End Sub
 
@@ -85,7 +62,12 @@
 
     End Sub
 
-    Private Sub panel_hijo_Paint(sender As Object, e As PaintEventArgs) Handles panel_hijo.Paint
+    Private Sub botoncrearinsumos_Click(sender As Object, e As EventArgs) Handles botoncrearinsumos.Click
+        'hideSubmenu()
+        abrirpanelhijo(New insumos())
+    End Sub
 
+    Private Sub botoninsumos_Click(sender As Object, e As EventArgs) Handles botoninsumos.Click
+        showSubmenu(panel_insumos)
     End Sub
 End Class
