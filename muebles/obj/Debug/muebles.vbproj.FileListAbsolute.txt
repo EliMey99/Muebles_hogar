@@ -32,7 +32,6 @@ C:\Users\Eliana Gonzalez\Desktop\Muebles Hogar - Práctica\muebles\muebles\obj\D
 C:\Users\Eliana Gonzalez\Desktop\Muebles Hogar - Práctica\muebles\muebles\obj\Debug\muebles.pdb
 C:\Users\Cristobal\source\repos\Muebles 2\muebles\obj\Debug\muebles.vbprojAssemblyReference.cache
 C:\Users\Cristobal\source\repos\Muebles 2\muebles\obj\Debug\muebles.formulario_principal.resources
-C:\Users\Cristobal\source\repos\Muebles 2\muebles\obj\Debug\muebles.insumos.resources
 C:\Users\Cristobal\source\repos\Muebles 2\muebles\obj\Debug\muebles.login.resources
 C:\Users\Cristobal\source\repos\Muebles 2\muebles\obj\Debug\muebles.Resources.resources
 C:\Users\Cristobal\source\repos\Muebles 2\muebles\obj\Debug\muebles.vbproj.GenerateResource.cache
@@ -280,3 +279,4 @@ C:\Users\Cristobal\source\repos\Muebles 2\muebles\bin\Debug\System.Text.Json.xml
 C:\Users\Cristobal\source\repos\Muebles 2\muebles\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Cristobal\source\repos\Muebles 2\muebles\bin\Debug\System.ValueTuple.xml
 C:\Users\Cristobal\source\repos\Muebles 2\muebles\obj\Debug\muebles.exe.config
+C:\Users\Cristobal\source\repos\Muebles 2\muebles\obj\Debug\muebles.insumos_clase.resources

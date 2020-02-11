@@ -19,34 +19,6 @@
 
     End Sub
 
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs)
-        hideSubmenu()
-
-
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs)
-        hideSubmenu()
-    End Sub
-
-    Private Sub Button7_Click(sender As Object, e As EventArgs)
-        hideSubmenu()
-    End Sub
-
-    Private Sub Button6_Click(sender As Object, e As EventArgs)
-        hideSubmenu()
-    End Sub
-
-    Private Sub Button5_Click(sender As Object, e As EventArgs)
-        hideSubmenu()
-    End Sub
-
-    Private Sub boton_configuracion_Click(sender As Object, e As EventArgs)
-        hideSubmenu()
-    End Sub
-
-
     Private currentform As Form = Nothing
     Private Sub abrirpanelhijo(childform As Form)
         If currentform IsNot Nothing Then currentform.Close()
@@ -64,7 +36,7 @@
 
     Private Sub botoncrearinsumos_Click(sender As Object, e As EventArgs) Handles botoncrearinsumos.Click
         'hideSubmenu()
-        abrirpanelhijo(New insumos())
+        abrirpanelhijo(New insumos_clase())
     End Sub
 
     Private Sub botoninsumos_Click(sender As Object, e As EventArgs) Handles botoninsumos.Click
