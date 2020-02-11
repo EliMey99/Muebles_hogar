@@ -108,6 +108,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion\Conexion_PosgtreSQLvb.vb" />
+    <Compile Include="Entidades\bodegas.vb" />
+    <Compile Include="Entidades\categorias.vb" />
+    <Compile Include="Entidades\clase_insumos.vb" />
+    <Compile Include="Entidades\dimensiones_insumos.vb" />
+    <Compile Include="Entidades\marcas_insumos.vb" />
+    <Compile Include="Entidades\proveedor.vb" />
+    <Compile Include="Entidades\sub_categorias.vb" />
+    <Compile Include="Entidades\tipos_insumos.vb" />
     <Compile Include="formulario.vb">
       <SubType>Form</SubType>
     </Compile>
