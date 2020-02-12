@@ -109,7 +109,9 @@
   <ItemGroup>
     <Compile Include="Conexion\Conexion_PosgtreSQLvb.vb" />
     <Compile Include="Entidades\bodegas.vb" />
-    <Compile Include="Entidades\categorias.vb" />
+    <Compile Include="Entidades\categorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Entidades\clase_insumos.vb" />
     <Compile Include="Entidades\dimensiones_insumos.vb" />
     <Compile Include="Entidades\marcas_insumos.vb" />
@@ -121,6 +123,12 @@
     </Compile>
     <Compile Include="formulario.Designer.vb">
       <DependentUpon>formulario.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\categorias.Designer.vb">
+      <DependentUpon>categorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\categorias.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Interfaces\insumos.Designer.vb">
@@ -154,6 +162,9 @@
   <ItemGroup>
     <EmbeddedResource Include="formulario.resx">
       <DependentUpon>formulario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\categorias.resx">
+      <DependentUpon>categorias.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\insumos.resx">
       <DependentUpon>insumos.vb</DependentUpon>
@@ -237,6 +248,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\FONDOPANEL6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOPANEL61.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

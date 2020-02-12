@@ -1,4 +1,5 @@
-﻿Public Class formulario_principal
+﻿Imports Npgsql
+Public Class formulario_principal
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         hideSubmenu()
@@ -41,5 +42,14 @@
 
     Private Sub botoninsumos_Click(sender As Object, e As EventArgs) Handles botoninsumos.Click
         showSubmenu(panel_insumos)
+    End Sub
+
+    Private Sub IconButton2_Click(sender As Object, e As EventArgs)
+        Conectar()
+
+    End Sub
+
+    Private Sub botonadministrarcategorias_Click(sender As Object, e As EventArgs) Handles botonadministrarcategorias.Click
+        abrirpanelhijo(New categorias())
     End Sub
 End Class

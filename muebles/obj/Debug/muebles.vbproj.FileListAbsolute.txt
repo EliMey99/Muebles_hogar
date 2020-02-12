@@ -280,3 +280,4 @@ C:\Users\Cristobal\source\repos\Muebles 2\muebles\bin\Debug\System.Threading.Tas
 C:\Users\Cristobal\source\repos\Muebles 2\muebles\bin\Debug\System.ValueTuple.xml
 C:\Users\Cristobal\source\repos\Muebles 2\muebles\obj\Debug\muebles.exe.config
 C:\Users\Cristobal\source\repos\Muebles 2\muebles\obj\Debug\muebles.insumos_clase.resources
+C:\Users\Cristobal\source\repos\Muebles 2\muebles\obj\Debug\muebles.categorias.resources

@@ -23,22 +23,19 @@ Partial Class formulario_principal
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.panel_hijo = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel_lateral = New System.Windows.Forms.Panel()
         Me.panel_insumos = New System.Windows.Forms.Panel()
+        Me.botonadministrarcategorias = New FontAwesome.Sharp.IconButton()
         Me.botoncrearinsumos = New FontAwesome.Sharp.IconButton()
         Me.botoninsumos = New FontAwesome.Sharp.IconButton()
         Me.panel_logo = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.IconButton2 = New FontAwesome.Sharp.IconButton()
         Me.panel_hijo.SuspendLayout()
         Me.Panel_lateral.SuspendLayout()
         Me.panel_insumos.SuspendLayout()
         Me.panel_logo.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'panel_hijo
@@ -53,19 +50,29 @@ Partial Class formulario_principal
         Me.panel_hijo.Size = New System.Drawing.Size(1258, 796)
         Me.panel_hijo.TabIndex = 1
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.DarkBlue
+        Me.Label1.Location = New System.Drawing.Point(67, 630)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(612, 25)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "proveedores - bodega - produccion - cuentas - item de gastos - obras"
+        '
         'Panel_lateral
         '
         Me.Panel_lateral.AutoScroll = True
         Me.Panel_lateral.BackColor = System.Drawing.SystemColors.Info
         Me.Panel_lateral.BackgroundImage = Global.muebles.My.Resources.Resources.Sin_título_8
         Me.Panel_lateral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel_lateral.Controls.Add(Me.Panel1)
-        Me.Panel_lateral.Controls.Add(Me.IconButton1)
         Me.Panel_lateral.Controls.Add(Me.panel_insumos)
         Me.Panel_lateral.Controls.Add(Me.botoninsumos)
         Me.Panel_lateral.Controls.Add(Me.panel_logo)
         Me.Panel_lateral.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel_lateral.Location = New System.Drawing.Point(0, 0)
+        Me.Panel_lateral.MinimumSize = New System.Drawing.Size(220, 796)
         Me.Panel_lateral.Name = "Panel_lateral"
         Me.Panel_lateral.Size = New System.Drawing.Size(220, 796)
         Me.Panel_lateral.TabIndex = 0
@@ -73,12 +80,36 @@ Partial Class formulario_principal
         'panel_insumos
         '
         Me.panel_insumos.BackColor = System.Drawing.Color.LemonChiffon
+        Me.panel_insumos.Controls.Add(Me.botonadministrarcategorias)
         Me.panel_insumos.Controls.Add(Me.botoncrearinsumos)
         Me.panel_insumos.Dock = System.Windows.Forms.DockStyle.Top
         Me.panel_insumos.Location = New System.Drawing.Point(0, 166)
         Me.panel_insumos.Name = "panel_insumos"
         Me.panel_insumos.Size = New System.Drawing.Size(220, 165)
         Me.panel_insumos.TabIndex = 4
+        '
+        'botonadministrarcategorias
+        '
+        Me.botonadministrarcategorias.BackColor = System.Drawing.SystemColors.Info
+        Me.botonadministrarcategorias.Dock = System.Windows.Forms.DockStyle.Top
+        Me.botonadministrarcategorias.FlatAppearance.BorderSize = 0
+        Me.botonadministrarcategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.botonadministrarcategorias.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.botonadministrarcategorias.Font = New System.Drawing.Font("Arial", 9.0!)
+        Me.botonadministrarcategorias.ForeColor = System.Drawing.Color.Goldenrod
+        Me.botonadministrarcategorias.IconChar = FontAwesome.Sharp.IconChar.ListAlt
+        Me.botonadministrarcategorias.IconColor = System.Drawing.Color.DarkGray
+        Me.botonadministrarcategorias.IconSize = 26
+        Me.botonadministrarcategorias.Location = New System.Drawing.Point(0, 40)
+        Me.botonadministrarcategorias.Name = "botonadministrarcategorias"
+        Me.botonadministrarcategorias.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.botonadministrarcategorias.Rotation = 0R
+        Me.botonadministrarcategorias.Size = New System.Drawing.Size(220, 40)
+        Me.botonadministrarcategorias.TabIndex = 5
+        Me.botonadministrarcategorias.Text = "Administrar categorias"
+        Me.botonadministrarcategorias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.botonadministrarcategorias.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.botonadministrarcategorias.UseVisualStyleBackColor = False
         '
         'botoncrearinsumos
         '
@@ -89,9 +120,9 @@ Partial Class formulario_principal
         Me.botoncrearinsumos.Flip = FontAwesome.Sharp.FlipOrientation.Normal
         Me.botoncrearinsumos.Font = New System.Drawing.Font("Arial", 9.0!)
         Me.botoncrearinsumos.ForeColor = System.Drawing.Color.Goldenrod
-        Me.botoncrearinsumos.IconChar = FontAwesome.Sharp.IconChar.Plus
+        Me.botoncrearinsumos.IconChar = FontAwesome.Sharp.IconChar.Cubes
         Me.botoncrearinsumos.IconColor = System.Drawing.Color.DarkGray
-        Me.botoncrearinsumos.IconSize = 26
+        Me.botoncrearinsumos.IconSize = 28
         Me.botoncrearinsumos.Location = New System.Drawing.Point(0, 0)
         Me.botoncrearinsumos.Name = "botoncrearinsumos"
         Me.botoncrearinsumos.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
@@ -144,72 +175,6 @@ Partial Class formulario_principal
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'IconButton1
-        '
-        Me.IconButton1.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton1.FlatAppearance.BorderSize = 0
-        Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton1.Font = New System.Drawing.Font("Arial", 10.8!)
-        Me.IconButton1.ForeColor = System.Drawing.Color.DimGray
-        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Tools
-        Me.IconButton1.IconColor = System.Drawing.Color.DarkGray
-        Me.IconButton1.IconSize = 26
-        Me.IconButton1.Location = New System.Drawing.Point(0, 331)
-        Me.IconButton1.Name = "IconButton1"
-        Me.IconButton1.Rotation = 0R
-        Me.IconButton1.Size = New System.Drawing.Size(220, 45)
-        Me.IconButton1.TabIndex = 5
-        Me.IconButton1.Text = "Bodega"
-        Me.IconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.IconButton1.UseVisualStyleBackColor = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.DarkBlue
-        Me.Label1.Location = New System.Drawing.Point(279, 264)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(612, 25)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "proveedores - bodega - produccion - cuentas - item de gastos - obras"
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.LemonChiffon
-        Me.Panel1.Controls.Add(Me.IconButton2)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 376)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(220, 90)
-        Me.Panel1.TabIndex = 6
-        '
-        'IconButton2
-        '
-        Me.IconButton2.BackColor = System.Drawing.SystemColors.Info
-        Me.IconButton2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton2.FlatAppearance.BorderSize = 0
-        Me.IconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton2.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton2.Font = New System.Drawing.Font("Arial", 9.0!)
-        Me.IconButton2.ForeColor = System.Drawing.Color.Goldenrod
-        Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.Plus
-        Me.IconButton2.IconColor = System.Drawing.Color.DarkGray
-        Me.IconButton2.IconSize = 26
-        Me.IconButton2.Location = New System.Drawing.Point(0, 0)
-        Me.IconButton2.Name = "IconButton2"
-        Me.IconButton2.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.IconButton2.Rotation = 0R
-        Me.IconButton2.Size = New System.Drawing.Size(220, 40)
-        Me.IconButton2.TabIndex = 4
-        Me.IconButton2.Text = "Administrar insumo"
-        Me.IconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.IconButton2.UseVisualStyleBackColor = False
-        '
         'formulario_principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -218,7 +183,8 @@ Partial Class formulario_principal
         Me.Controls.Add(Me.panel_hijo)
         Me.Controls.Add(Me.Panel_lateral)
         Me.ForeColor = System.Drawing.Color.Cornsilk
-        Me.MinimumSize = New System.Drawing.Size(1039, 542)
+        Me.MaximumSize = New System.Drawing.Size(1496, 843)
+        Me.MinimumSize = New System.Drawing.Size(1296, 643)
         Me.Name = "formulario_principal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
@@ -228,7 +194,6 @@ Partial Class formulario_principal
         Me.panel_insumos.ResumeLayout(False)
         Me.panel_logo.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -241,7 +206,5 @@ Partial Class formulario_principal
     Friend WithEvents botoninsumos As FontAwesome.Sharp.IconButton
     Friend WithEvents botoncrearinsumos As FontAwesome.Sharp.IconButton
     Friend WithEvents Label1 As Label
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents IconButton2 As FontAwesome.Sharp.IconButton
-    Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
+    Friend WithEvents botonadministrarcategorias As FontAwesome.Sharp.IconButton
 End Class
