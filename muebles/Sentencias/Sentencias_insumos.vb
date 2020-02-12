@@ -66,6 +66,80 @@ Public Class Sentencias_insumos
         End Try
         Return estado
     End Function
+
     '---------------------------------------------------------------------------------------------------------------------------------- 
-    '-------------------------------------------------------- U P D A T E S------------------------------------------------------------- 
+    '-------------------------------------------------------- U P D A T E S ------------------------------------------------------------- 
+
+    'Actualizar INSUMO
+    Public Function Actualizar_Insumos(ByVal datos As clase_insumos) As Boolean
+        Dim estado As Boolean = True
+        Try
+            Conectar()
+            adaptador.UpdateCommand = New NpgsqlCommand("UPDATE insumos SET id_tipo_in=@tipo,id_dimension_in=@dimension,id_marca_insumo=@marca,nombre_insumo=@nombre
+                                                           ,descripcion_insumo=@descripcion,color_insumo=@color WHERE id_insumo=@id", conex)
+            adaptador.UpdateCommand.Parameters.Add("@id", NpgsqlTypes.NpgsqlDbType.Integer).Value = datos.Id_insumos1
+            adaptador.UpdateCommand.Parameters.Add("@tipo_in", NpgsqlTypes.NpgsqlDbType.Integer).Value = datos.Id_tipo_in1
+            adaptador.UpdateCommand.Parameters.Add("@dimension", NpgsqlTypes.NpgsqlDbType.Integer).Value = datos.Id_dimension_in1
+            adaptador.UpdateCommand.Parameters.Add("@marca", NpgsqlTypes.NpgsqlDbType.Integer).Value = datos.Id_marca_insumo1
+            adaptador.UpdateCommand.Parameters.Add("@nombre", NpgsqlTypes.NpgsqlDbType.Varchar, 32).Value = datos.Nombre_insumo1
+            adaptador.UpdateCommand.Parameters.Add("@descripcion", NpgsqlTypes.NpgsqlDbType.Varchar, 55).Value = datos.Descripcion_insumo1
+            adaptador.UpdateCommand.Parameters.Add("@color", NpgsqlTypes.NpgsqlDbType.Varchar, 32).Value = datos.Color_insumo1
+            conex.Open()
+            adaptador.UpdateCommand.Connection = conex
+            adaptador.UpdateCommand.ExecuteNonQuery()
+
+        Catch ex As NpgsqlException
+            MessageBox.Show(ex.Message)
+            estado = False
+        Finally
+            conex.Close()
+        End Try
+        Return estado
+    End Function
+
+    'Actualizar CATEGORÍAS
+    Public Function Actualzar_Categorias(ByVal datos As categorias) As Boolean
+        Dim estado As Boolean = True
+        Try
+            Conectar()
+            adaptador.UpdateCommand = New NpgsqlCommand("UPDATE categorias_insumo SET nombre_categoria=@name WHERE id_categorias=@id", conex)
+            adaptador.UpdateCommand.Parameters.Add("@id", NpgsqlTypes.NpgsqlDbType.Integer).Value = datos.Id_categorias1
+            adaptador.UpdateCommand.Parameters.Add("@name", NpgsqlTypes.NpgsqlDbType.Varchar, 32).Value = datos.Nombre_categoria1
+            conex.Open()
+            adaptador.UpdateCommand.Connection = conex
+            adaptador.UpdateCommand.ExecuteNonQuery()
+
+        Catch ex As NpgsqlException
+            MessageBox.Show(ex.Message)
+            estado = False
+        Finally
+            conex.Close()
+        End Try
+        Return estado
+    End Function
+
+    'Actualizar SUB CATEGORÍAS
+    Public Function Actualizar_Categorias(ByVal datos As sub_categorias) As Boolean
+        Dim estado As Boolean = True
+        Try
+            Conectar()
+            adaptador.UpdateCommand = New NpgsqlCommand("UPDATE sub_categorias_insu SET stock_maximo=@maximo,stock_minimo=@minimo,stock_critico=@critico
+                                                          WHERE id_sub_categoria_in=@id", conex)
+            adaptador.UpdateCommand.Parameters.Add("@id", NpgsqlTypes.NpgsqlDbType.Integer).Value = datos.Id_sub_categoria_in1
+            adaptador.UpdateCommand.Parameters.Add("@maximo", NpgsqlTypes.NpgsqlDbType.Integer).Value = datos.Stock_maximo1
+            adaptador.UpdateCommand.Parameters.Add("@minimo", NpgsqlTypes.NpgsqlDbType.Integer).Value = datos.Stock_minimo1
+            adaptador.UpdateCommand.Parameters.Add("@critico", NpgsqlTypes.NpgsqlDbType.Integer).Value = datos.Stock_critico1
+            conex.Open()
+            adaptador.UpdateCommand.Connection = conex
+            adaptador.UpdateCommand.ExecuteNonQuery()
+
+        Catch ex As NpgsqlException
+            MessageBox.Show(ex.Message)
+            estado = False
+        Finally
+            conex.Close()
+        End Try
+        Return estado
+    End Function
+
 End Class
