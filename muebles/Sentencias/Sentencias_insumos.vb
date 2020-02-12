@@ -2,10 +2,11 @@
 
 Public Class Sentencias_insumos
 
-    'Creación de insumos
+
     Private adaptador As New Npgsql.NpgsqlDataAdapter
 
-
+    '--------------------------------------------------- I N S E  R T S ------------------------------------------------------------- 
+    'Creación de INSUMOS
     Public Function Creacion_Insumos(ByVal datos As clase_insumos) As Boolean
         Dim estado As Boolean = True
         Try
@@ -28,6 +29,7 @@ Public Class Sentencias_insumos
         Return estado
     End Function
 
+    'Creación de CATEGORÍAS
     Public Function Creacion_Categoria(ByRef datos As categorias) As Boolean
         Dim estado As Boolean = True
         Try
@@ -44,6 +46,7 @@ Public Class Sentencias_insumos
 
     End Function
 
+    'Creación de SUB CATEGORÍAS
     Public Function Creacion_sub_categoria(ByRef datos As sub_categorias) As Boolean
         Dim estado As Boolean = True
         Try
@@ -62,6 +65,7 @@ Public Class Sentencias_insumos
             cerrar()
         End Try
         Return estado
-
     End Function
+    '---------------------------------------------------------------------------------------------------------------------------------- 
+    '-------------------------------------------------------- U P D A T E S------------------------------------------------------------- 
 End Class
