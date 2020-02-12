@@ -236,5 +236,8 @@
   <ItemGroup>
     <None Include="Resources\prueba 8.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDOPANEL6.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
