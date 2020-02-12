@@ -2,18 +2,19 @@
 Module Conexion_PosgtreSQLvb
 
     Dim estado As Boolean = True
-    Dim conex As New Npgsql.NpgsqlConnection
+    Public conex As New NpgsqlConnection
 
     Public Function Conectar() As Boolean
 
         Try
+            'Conexión a PostgreSQL 
             conex.ConnectionString = "Server=192.168.1.128;Port=5432;Database=Muebles_hogar;UserId=postgres;Password=postgres;"
             conex.Open()
 
             If conex.State = ConnectionState.Open Then
                 MessageBox.Show("Conectado")
             Else
-                MessageBox.Show("Error de conexion")
+                MessageBox.Show("Error de conexión")
             End If
 
         Catch ex As Exception
