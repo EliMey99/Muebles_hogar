@@ -1,13 +1,13 @@
-﻿Public Class categorias
-    Private id_categorias As Integer
+﻿Public Class categoria
+    Private id_categoria As Integer
     Private nombre_categoria As String
 
-    Public Property Id_categorias1 As Integer
+    Public Property Id_categoria1 As Integer
         Get
-            Return id_categorias
+            Return id_categoria
         End Get
         Set(value As Integer)
-            id_categorias = value
+            id_categoria = value
         End Set
     End Property
 

@@ -1,6 +1,7 @@
 ﻿Public Class sub_categorias
 
     Private id_sub_categoria_in As Integer
+    Private nombre_sub_cate As String
     Private id_categoria_in As Integer
     Private stock_maximo As Integer
     Private stock_minimo As Integer
@@ -48,6 +49,15 @@
         End Get
         Set(value As Integer)
             stock_critico = value
+        End Set
+    End Property
+
+    Public Property Nombre_sub_cate1 As String
+        Get
+            Return nombre_sub_cate
+        End Get
+        Set(value As String)
+            nombre_sub_cate = value
         End Set
     End Property
 End Class
