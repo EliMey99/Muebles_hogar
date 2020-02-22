@@ -10,7 +10,8 @@ Module Conexion_PosgtreSQLvb
 
         Try
             'Conexión a PostgreSQL 
-            conex.ConnectionString = "server=localhost;userid=postgres;password=pollitopio02;database=muebles;"
+            'conex.ConnectionString = "server=localhost;userid=postgres;password=pollitopio02;database=muebles;"
+            conex.ConnectionString = "server=localhost;userid=postgres;password=postgres;database=Muebles_hogar;"
             conex.Open()
 
             If conex.State = ConnectionState.Open Then
