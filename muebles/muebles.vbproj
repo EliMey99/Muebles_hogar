@@ -169,7 +169,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Sentencias\Sentencias_insumos.vb" />
+    <Compile Include="Sentencias\Insumos\Codigos_insu.vb" />
+    <Compile Include="Sentencias\Insumos\Sentencias_insumos.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="formulario.resx">

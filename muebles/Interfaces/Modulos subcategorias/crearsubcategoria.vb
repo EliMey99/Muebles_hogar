@@ -50,10 +50,13 @@
     End Sub
 
     Private Sub dgvsubcategorias_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvsubcategorias.CellContentDoubleClick
+        Dim subcat As New sub_categorias
+
         idcategoria = dgvsubcategorias.Rows(dgvsubcategorias.CurrentRow.Index).Cells(0).Value
+        subcat.Id_categoria_in1 = idcategoria
+        txtid.Text = idcategoria
+        Consulta_sub_cates()
+
     End Sub
 
-    Private Sub dgvsubcategorias_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvsubcategorias.CellContentClick
-
-    End Sub
 End Class

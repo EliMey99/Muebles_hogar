@@ -27,6 +27,7 @@ Module Conexion_PosgtreSQLvb
 
         Return estado
     End Function
+
     Public Sub cerrar()
         conex.Close()
     End Sub
