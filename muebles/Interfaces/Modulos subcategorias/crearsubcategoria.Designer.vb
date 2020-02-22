@@ -54,10 +54,11 @@ Partial Class crearsubcategoria
         Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.None
         Me.IconButton1.IconColor = System.Drawing.Color.Black
         Me.IconButton1.IconSize = 16
-        Me.IconButton1.Location = New System.Drawing.Point(619, 494)
+        Me.IconButton1.Location = New System.Drawing.Point(464, 401)
+        Me.IconButton1.Margin = New System.Windows.Forms.Padding(2)
         Me.IconButton1.Name = "IconButton1"
         Me.IconButton1.Rotation = 0R
-        Me.IconButton1.Size = New System.Drawing.Size(210, 32)
+        Me.IconButton1.Size = New System.Drawing.Size(158, 26)
         Me.IconButton1.TabIndex = 9
         Me.IconButton1.Text = "Finalizar"
         Me.IconButton1.UseVisualStyleBackColor = False
@@ -68,9 +69,10 @@ Partial Class crearsubcategoria
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Arial", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.SandyBrown
-        Me.Label1.Location = New System.Drawing.Point(25, 9)
+        Me.Label1.Location = New System.Drawing.Point(19, 7)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(255, 32)
+        Me.Label1.Size = New System.Drawing.Size(200, 25)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Crear Subcategoria"
         '
@@ -96,7 +98,8 @@ Partial Class crearsubcategoria
         Me.dgvsubcategorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgvsubcategorias.EnableHeadersVisualStyles = False
         Me.dgvsubcategorias.GridColor = System.Drawing.Color.White
-        Me.dgvsubcategorias.Location = New System.Drawing.Point(47, 126)
+        Me.dgvsubcategorias.Location = New System.Drawing.Point(35, 102)
+        Me.dgvsubcategorias.Margin = New System.Windows.Forms.Padding(2)
         Me.dgvsubcategorias.Name = "dgvsubcategorias"
         Me.dgvsubcategorias.RowHeadersVisible = False
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
@@ -106,7 +109,7 @@ Partial Class crearsubcategoria
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.SaddleBrown
         Me.dgvsubcategorias.RowsDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvsubcategorias.RowTemplate.Height = 24
-        Me.dgvsubcategorias.Size = New System.Drawing.Size(433, 410)
+        Me.dgvsubcategorias.Size = New System.Drawing.Size(325, 333)
         Me.dgvsubcategorias.TabIndex = 11
         '
         'Label3
@@ -115,9 +118,10 @@ Partial Class crearsubcategoria
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Sienna
-        Me.Label3.Location = New System.Drawing.Point(42, 87)
+        Me.Label3.Location = New System.Drawing.Point(32, 71)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(450, 27)
+        Me.Label3.Size = New System.Drawing.Size(355, 22)
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Seleccionar categoria a la que pertenece"
         '
@@ -127,9 +131,10 @@ Partial Class crearsubcategoria
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Arial", 13.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.DimGray
-        Me.Label4.Location = New System.Drawing.Point(528, 181)
+        Me.Label4.Location = New System.Drawing.Point(396, 147)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(198, 25)
+        Me.Label4.Size = New System.Drawing.Size(163, 21)
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "ID de Subcategoria"
         '
@@ -140,9 +145,10 @@ Partial Class crearsubcategoria
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtid.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtid.Location = New System.Drawing.Point(791, 184)
+        Me.txtid.Location = New System.Drawing.Point(593, 150)
+        Me.txtid.Margin = New System.Windows.Forms.Padding(2)
         Me.txtid.Name = "txtid"
-        Me.txtid.Size = New System.Drawing.Size(131, 27)
+        Me.txtid.Size = New System.Drawing.Size(99, 23)
         Me.txtid.TabIndex = 14
         '
         'Label5
@@ -151,9 +157,10 @@ Partial Class crearsubcategoria
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.SandyBrown
-        Me.Label5.Location = New System.Drawing.Point(625, 282)
+        Me.Label5.Location = New System.Drawing.Point(469, 229)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(191, 27)
+        Me.Label5.Size = New System.Drawing.Size(151, 22)
         Me.Label5.TabIndex = 15
         Me.Label5.Text = "Stock de insumo"
         '
@@ -164,9 +171,10 @@ Partial Class crearsubcategoria
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtcritico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtcritico.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcritico.Location = New System.Drawing.Point(791, 332)
+        Me.txtcritico.Location = New System.Drawing.Point(593, 270)
+        Me.txtcritico.Margin = New System.Windows.Forms.Padding(2)
         Me.txtcritico.Name = "txtcritico"
-        Me.txtcritico.Size = New System.Drawing.Size(131, 27)
+        Me.txtcritico.Size = New System.Drawing.Size(99, 23)
         Me.txtcritico.TabIndex = 16
         '
         'Label6
@@ -175,9 +183,10 @@ Partial Class crearsubcategoria
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.DimGray
-        Me.Label6.Location = New System.Drawing.Point(528, 332)
+        Me.Label6.Location = New System.Drawing.Point(396, 270)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(224, 27)
+        Me.Label6.Size = New System.Drawing.Size(180, 22)
         Me.Label6.TabIndex = 17
         Me.Label6.Text = "Ingrese stock critico"
         '
@@ -187,9 +196,10 @@ Partial Class crearsubcategoria
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.DimGray
-        Me.Label7.Location = New System.Drawing.Point(528, 386)
+        Me.Label7.Location = New System.Drawing.Point(396, 314)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(239, 27)
+        Me.Label7.Size = New System.Drawing.Size(191, 22)
         Me.Label7.TabIndex = 18
         Me.Label7.Text = "Ingrese stock minimo"
         '
@@ -199,9 +209,10 @@ Partial Class crearsubcategoria
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.DimGray
-        Me.Label8.Location = New System.Drawing.Point(528, 441)
+        Me.Label8.Location = New System.Drawing.Point(396, 358)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(244, 27)
+        Me.Label8.Size = New System.Drawing.Size(196, 22)
         Me.Label8.TabIndex = 19
         Me.Label8.Text = "Ingrese stock maximo"
         '
@@ -212,9 +223,10 @@ Partial Class crearsubcategoria
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtminimo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtminimo.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtminimo.Location = New System.Drawing.Point(791, 386)
+        Me.txtminimo.Location = New System.Drawing.Point(593, 314)
+        Me.txtminimo.Margin = New System.Windows.Forms.Padding(2)
         Me.txtminimo.Name = "txtminimo"
-        Me.txtminimo.Size = New System.Drawing.Size(131, 27)
+        Me.txtminimo.Size = New System.Drawing.Size(99, 23)
         Me.txtminimo.TabIndex = 20
         '
         'txtmaximo
@@ -224,9 +236,10 @@ Partial Class crearsubcategoria
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtmaximo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtmaximo.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtmaximo.Location = New System.Drawing.Point(791, 441)
+        Me.txtmaximo.Location = New System.Drawing.Point(593, 358)
+        Me.txtmaximo.Margin = New System.Windows.Forms.Padding(2)
         Me.txtmaximo.Name = "txtmaximo"
-        Me.txtmaximo.Size = New System.Drawing.Size(131, 27)
+        Me.txtmaximo.Size = New System.Drawing.Size(99, 23)
         Me.txtmaximo.TabIndex = 21
         '
         'Label2
@@ -236,9 +249,10 @@ Partial Class crearsubcategoria
         Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label2.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.SandyBrown
-        Me.Label2.Location = New System.Drawing.Point(594, 124)
+        Me.Label2.Location = New System.Drawing.Point(446, 101)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(253, 27)
+        Me.Label2.Size = New System.Drawing.Size(201, 22)
         Me.Label2.TabIndex = 22
         Me.Label2.Text = "Datos de subcategoria"
         '
@@ -248,9 +262,10 @@ Partial Class crearsubcategoria
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Font = New System.Drawing.Font("Arial", 13.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.DimGray
-        Me.Label9.Location = New System.Drawing.Point(528, 236)
+        Me.Label9.Location = New System.Drawing.Point(396, 192)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(224, 25)
+        Me.Label9.Size = New System.Drawing.Size(184, 21)
         Me.Label9.TabIndex = 23
         Me.Label9.Text = "Nombre Subcategoria"
         '
@@ -261,17 +276,18 @@ Partial Class crearsubcategoria
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtnombre.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtnombre.Location = New System.Drawing.Point(791, 239)
+        Me.txtnombre.Location = New System.Drawing.Point(593, 194)
+        Me.txtnombre.Margin = New System.Windows.Forms.Padding(2)
         Me.txtnombre.Name = "txtnombre"
-        Me.txtnombre.Size = New System.Drawing.Size(131, 27)
+        Me.txtnombre.Size = New System.Drawing.Size(99, 23)
         Me.txtnombre.TabIndex = 24
         '
         'crearsubcategoria
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.muebles.My.Resources.Resources.FONDOPANEL5
-        Me.ClientSize = New System.Drawing.Size(951, 563)
+        Me.ClientSize = New System.Drawing.Size(713, 457)
         Me.Controls.Add(Me.txtnombre)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label2)
@@ -288,6 +304,7 @@ Partial Class crearsubcategoria
         Me.Controls.Add(Me.dgvsubcategorias)
         Me.Controls.Add(Me.IconButton1)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "crearsubcategoria"
