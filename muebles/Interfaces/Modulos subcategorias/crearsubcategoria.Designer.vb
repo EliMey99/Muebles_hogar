@@ -22,8 +22,8 @@ Partial Class crearsubcategoria
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.IconButton1 = New FontAwesome.Sharp.IconButton()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dgvsubcategorias = New System.Windows.Forms.DataGridView()
@@ -60,7 +60,7 @@ Partial Class crearsubcategoria
         Me.IconButton1.Rotation = 0R
         Me.IconButton1.Size = New System.Drawing.Size(158, 26)
         Me.IconButton1.TabIndex = 9
-        Me.IconButton1.Text = "Finalizar"
+        Me.IconButton1.Text = "Añadir"
         Me.IconButton1.UseVisualStyleBackColor = False
         '
         'Label1
@@ -86,14 +86,14 @@ Partial Class crearsubcategoria
         Me.dgvsubcategorias.BackgroundColor = System.Drawing.Color.White
         Me.dgvsubcategorias.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvsubcategorias.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.LightGoldenrodYellow
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.PaleGoldenrod
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowFrame
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvsubcategorias.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.LightGoldenrodYellow
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.PaleGoldenrod
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowFrame
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvsubcategorias.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.dgvsubcategorias.ColumnHeadersHeight = 33
         Me.dgvsubcategorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgvsubcategorias.EnableHeadersVisualStyles = False
@@ -102,12 +102,12 @@ Partial Class crearsubcategoria
         Me.dgvsubcategorias.Margin = New System.Windows.Forms.Padding(2)
         Me.dgvsubcategorias.Name = "dgvsubcategorias"
         Me.dgvsubcategorias.RowHeadersVisible = False
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.SaddleBrown
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ControlLight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.SaddleBrown
-        Me.dgvsubcategorias.RowsDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.SaddleBrown
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.ControlLight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.SaddleBrown
+        Me.dgvsubcategorias.RowsDefaultCellStyle = DataGridViewCellStyle4
         Me.dgvsubcategorias.RowTemplate.Height = 24
         Me.dgvsubcategorias.Size = New System.Drawing.Size(325, 333)
         Me.dgvsubcategorias.TabIndex = 11
