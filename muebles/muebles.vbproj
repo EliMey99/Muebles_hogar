@@ -108,7 +108,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion\Conexion_PosgtreSQLvb.vb" />
-    <Compile Include="Conexion\consultas_insumos.vb" />
+    <Compile Include="Entidades\bodega_insumos.vb" />
+    <Compile Include="Entidades\historial_precio.vb" />
+    <Compile Include="Sentencias\Bodegas\Sentencias_bodegas.vb" />
+    <Compile Include="Sentencias\Insumos\consultas_insumos.vb" />
     <Compile Include="Entidades\bodegas.vb" />
     <Compile Include="Entidades\categoria.vb" />
     <Compile Include="Entidades\clase_insumos.vb" />
@@ -170,7 +173,10 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Sentencias\Insumos\Codigos_insu.vb" />
+    <Compile Include="Sentencias\Insumos\Sentencias_categorias.vb" />
+    <Compile Include="Sentencias\Insumos\Sentencias_dimensiones.vb" />
     <Compile Include="Sentencias\Insumos\Sentencias_insumos.vb" />
+    <Compile Include="Sentencias\Proveedores\sentencias_proveedores.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="formulario.resx">
@@ -270,6 +276,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\FONDOPANEL61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sentencias\Documentos\" />
+    <Folder Include="Sentencias\Usuarios\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

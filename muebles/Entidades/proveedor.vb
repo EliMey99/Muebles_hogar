@@ -8,6 +8,7 @@
     Private correo As String
     Private rut As String
 
+
     Public Property Id_proveedor1 As Integer
         Get
             Return id_proveedor
