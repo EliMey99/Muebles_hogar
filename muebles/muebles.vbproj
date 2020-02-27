@@ -111,6 +111,10 @@
     <Compile Include="Entidades\bodega_insumos.vb" />
     <Compile Include="Entidades\historial_precio.vb" />
     <Compile Include="Sentencias\Bodegas\Sentencias_bodegas.vb" />
+    <Compile Include="Sentencias\Documentos\Sentencias_boletas.vb" />
+    <Compile Include="Sentencias\Documentos\Sentencias_cotizacion.vb" />
+    <Compile Include="Sentencias\Documentos\Sentencias_facturas.vb" />
+    <Compile Include="Sentencias\Documentos\Sentencias_oc.vb" />
     <Compile Include="Sentencias\Insumos\consultas_insumos.vb" />
     <Compile Include="Entidades\bodegas.vb" />
     <Compile Include="Entidades\categoria.vb" />
@@ -278,7 +282,6 @@
     <None Include="Resources\FONDOPANEL61.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Sentencias\Documentos\" />
     <Folder Include="Sentencias\Usuarios\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
