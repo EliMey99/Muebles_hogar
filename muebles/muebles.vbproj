@@ -180,6 +180,8 @@
     <Compile Include="Sentencias\Insumos\Sentencias_categorias.vb" />
     <Compile Include="Sentencias\Insumos\Sentencias_dimensiones.vb" />
     <Compile Include="Sentencias\Insumos\Sentencias_insumos.vb" />
+    <Compile Include="Sentencias\Insumos\Sentencias_marcas.vb" />
+    <Compile Include="Sentencias\Insumos\Sentencias_tipos.vb" />
     <Compile Include="Sentencias\Proveedores\sentencias_proveedores.vb" />
   </ItemGroup>
   <ItemGroup>

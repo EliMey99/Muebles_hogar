@@ -16,7 +16,7 @@ Module consultas_insumos
         Try
             Conectar()
             'Se prepara la sentencia 
-            adaptador.SelectCommand = New NpgsqlCommand("select * from categorias_insumos", conex)
+            adaptador.SelectCommand = New NpgsqlCommand("SELECT * FROM categorias_insumos", conex)
             adaptador.Fill(datos)
             _dtvdatos.Table = datos.Tables(0)
 

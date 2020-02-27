@@ -11,7 +11,7 @@ Public Class Sentencias_categorias
         Dim estado As Boolean = True
         Try
             Conectar()
-            adaptador.InsertCommand = New NpgsqlCommand("insert into categorias_insumos(nombre_categoria) VALUES (@nombres)", conex)
+            adaptador.InsertCommand = New NpgsqlCommand("INSERT INTO categorias_insumos(nombre_categoria) VALUES (@nombres)", conex)
             adaptador.InsertCommand.Parameters.Add("@nombres", NpgsqlTypes.NpgsqlDbType.Varchar, 32).Value = datos.Nombre_categoria1
             adaptador.InsertCommand.Connection = conex
             adaptador.InsertCommand.ExecuteNonQuery()
@@ -108,7 +108,7 @@ Public Class Sentencias_categorias
         Dim estado As Boolean = True
         Try
             Conectar()
-            adaptador.DeleteCommand = New NpgsqlCommand("Delete From categorias_insumos Where id_categorias = @id", conex)
+            adaptador.DeleteCommand = New NpgsqlCommand("DELETE FROM categorias_insumos WHERE id_categorias = @id", conex)
             adaptador.DeleteCommand.Parameters.Add("@id", NpgsqlTypes.NpgsqlDbType.Integer).Value = datos.Id_categoria1
             adaptador.DeleteCommand.Connection = conex
             adaptador.DeleteCommand.ExecuteNonQuery()
@@ -128,7 +128,7 @@ Public Class Sentencias_categorias
         Dim estado As Boolean = True
         Try
             Conectar()
-            adaptador.DeleteCommand = New NpgsqlCommand("Delete From sub_categorias_insu Where id_sub_categoria_in= @id", conex)
+            adaptador.DeleteCommand = New NpgsqlCommand("DELETE FROM sub_categorias_insu WHERE id_sub_categoria_in= @id", conex)
             adaptador.DeleteCommand.Parameters.Add("@id", NpgsqlTypes.NpgsqlDbType.Integer).Value = datos.Id_sub_categoria_in1
             adaptador.DeleteCommand.Connection = conex
             adaptador.DeleteCommand.ExecuteNonQuery()
