@@ -109,13 +109,15 @@
   <ItemGroup>
     <Compile Include="Conexion\Conexion_PosgtreSQLvb.vb" />
     <Compile Include="Entidades\bodega_insumos.vb" />
+    <Compile Include="Entidades\comprobantes.vb" />
     <Compile Include="Entidades\historial_precio.vb" />
     <Compile Include="Sentencias\Bodegas\Sentencias_bodegas.vb" />
-    <Compile Include="Sentencias\Documentos\Sentencias_boletas.vb" />
-    <Compile Include="Sentencias\Documentos\Sentencias_cotizacion.vb" />
-    <Compile Include="Sentencias\Documentos\Sentencias_facturas.vb" />
-    <Compile Include="Sentencias\Documentos\Sentencias_oc.vb" />
-    <Compile Include="Sentencias\Insumos\consultas_insumos.vb" />
+    <Compile Include="Sentencias\Documentos ingresos\Sentencias_boletas.vb" />
+    <Compile Include="Sentencias\Documentos ingresos\Sentencias_cotizacion.vb" />
+    <Compile Include="Sentencias\Documentos ingresos\Sentencias_facturas.vb" />
+    <Compile Include="Sentencias\Documentos ingresos\Sentencias_guias_despacho.vb" />
+    <Compile Include="Sentencias\Documentos ingresos\Sentencias_oc.vb" />
+    <Compile Include="Sentencias\Insumos\Consultas_insumos.vb" />
     <Compile Include="Entidades\bodegas.vb" />
     <Compile Include="Entidades\categoria.vb" />
     <Compile Include="Entidades\clase_insumos.vb" />
