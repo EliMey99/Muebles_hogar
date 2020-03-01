@@ -108,24 +108,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion\Conexion_PosgtreSQLvb.vb" />
-    <Compile Include="Entidades\bodega_insumos.vb" />
-    <Compile Include="Entidades\comprobantes.vb" />
-    <Compile Include="Entidades\historial_precio.vb" />
-    <Compile Include="Sentencias\Bodegas\Sentencias_bodegas.vb" />
-    <Compile Include="Sentencias\Documentos ingresos\Sentencias_boletas.vb" />
-    <Compile Include="Sentencias\Documentos ingresos\Sentencias_cotizacion.vb" />
-    <Compile Include="Sentencias\Documentos ingresos\Sentencias_facturas.vb" />
-    <Compile Include="Sentencias\Documentos ingresos\Sentencias_guias_despacho.vb" />
-    <Compile Include="Sentencias\Documentos ingresos\Sentencias_oc.vb" />
-    <Compile Include="Sentencias\Insumos\Consultas_insumos.vb" />
-    <Compile Include="Entidades\bodegas.vb" />
-    <Compile Include="Entidades\categoria.vb" />
-    <Compile Include="Entidades\clase_insumos.vb" />
-    <Compile Include="Entidades\dimensiones_insumos.vb" />
-    <Compile Include="Entidades\marcas_insumos.vb" />
-    <Compile Include="Entidades\proveedor.vb" />
-    <Compile Include="Entidades\sub_categorias.vb" />
-    <Compile Include="Entidades\tipos_insumos.vb" />
+    <Compile Include="Entidades\Entidades_modulo 1\bodega_insumos.vb" />
+    <Compile Include="Entidades\Entidades_modulo 1\comprobantes.vb" />
+    <Compile Include="Entidades\Entidades_modulo 1\historial_precio.vb" />
+    <Compile Include="Sentencias\Sentencias_modulo1\Bodegas\Sentencias_bodegas.vb" />
+    <Compile Include="Sentencias\Sentencias_modulo1\Documentos ingresos\Sentencias_boletas.vb" />
+    <Compile Include="Sentencias\Sentencias_modulo1\Documentos ingresos\Sentencias_cotizacion.vb" />
+    <Compile Include="Sentencias\Sentencias_modulo1\Documentos ingresos\Sentencias_facturas.vb" />
+    <Compile Include="Sentencias\Sentencias_modulo1\Documentos ingresos\Sentencias_guias_despacho.vb" />
+    <Compile Include="Sentencias\Sentencias_modulo1\Documentos ingresos\Sentencias_oc.vb" />
+    <Compile Include="Sentencias\Sentencias_modulo1\Insumos\Consultas_insumos.vb" />
+    <Compile Include="Entidades\Entidades_modulo 1\bodegas.vb" />
+    <Compile Include="Entidades\Entidades_modulo 1\categoria.vb" />
+    <Compile Include="Entidades\Entidades_modulo 1\clase_insumos.vb" />
+    <Compile Include="Entidades\Entidades_modulo 1\dimensiones_insumos.vb" />
+    <Compile Include="Entidades\Entidades_modulo 1\marcas_insumos.vb" />
+    <Compile Include="Entidades\Entidades_modulo 1\proveedor.vb" />
+    <Compile Include="Entidades\Entidades_modulo 1\sub_categorias.vb" />
+    <Compile Include="Entidades\Entidades_modulo 1\tipos_insumos.vb" />
     <Compile Include="formulario.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -178,13 +178,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Sentencias\Insumos\Codigos_insu.vb" />
-    <Compile Include="Sentencias\Insumos\Sentencias_categorias.vb" />
-    <Compile Include="Sentencias\Insumos\Sentencias_dimensiones.vb" />
-    <Compile Include="Sentencias\Insumos\Sentencias_insumos.vb" />
-    <Compile Include="Sentencias\Insumos\Sentencias_marcas.vb" />
-    <Compile Include="Sentencias\Insumos\Sentencias_tipos.vb" />
-    <Compile Include="Sentencias\Proveedores\sentencias_proveedores.vb" />
+    <Compile Include="Sentencias\Sentencias_modulo1\Insumos\Codigos_insu.vb" />
+    <Compile Include="Sentencias\Sentencias_modulo1\Insumos\Sentencias_categorias.vb" />
+    <Compile Include="Sentencias\Sentencias_modulo1\Insumos\Sentencias_dimensiones.vb" />
+    <Compile Include="Sentencias\Sentencias_modulo1\Insumos\Sentencias_insumos.vb" />
+    <Compile Include="Sentencias\Sentencias_modulo1\Insumos\Sentencias_marcas.vb" />
+    <Compile Include="Sentencias\Sentencias_modulo1\Insumos\Sentencias_tipos.vb" />
+    <Compile Include="Sentencias\Sentencias_modulo1\Proveedores\sentencias_proveedores.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="formulario.resx">
@@ -286,7 +286,7 @@
     <None Include="Resources\FONDOPANEL61.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Sentencias\Usuarios\" />
+    <Folder Include="Sentencias\Sentencias_modulo1\Usuarios\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

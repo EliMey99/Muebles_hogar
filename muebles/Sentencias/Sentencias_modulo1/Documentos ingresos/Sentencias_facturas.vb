@@ -54,10 +54,12 @@ Public Class Sentencias_facturas
             adaptador.UpdateCommand.Connection = conex
             adaptador.UpdateCommand.ExecuteNonQuery()
 
-            'Actualiza la id de las guias asociadas (si existen)
-            Actualizar_campo_guia(datos)
-            'Actualiza la id del "detalle factura"
-            Actualizar_detalle_factura(datos)
+            If datos.Id_doc1 <> datos.Id_docs21 Then
+                'Actualiza la id de las guias asociadas (si existen)
+                Actualizar_campo_guia(datos)
+                'Actualiza la id del "detalle factura"
+                Actualizar_detalle_factura(datos)
+            End If
 
         Catch ex As NpgsqlException
             MessageBox.Show(ex.Message)
@@ -69,6 +71,8 @@ Public Class Sentencias_facturas
 
     End Function
 
+
+    'ACTUALIZA LA ID DE DETALLE DE FACTURA
     Private Sub Actualizar_detalle_factura(datos As comprobantes)
 
         Try
@@ -88,6 +92,7 @@ Public Class Sentencias_facturas
         End Try
     End Sub
 
+    'ACTUALIZA EL CAMPO ASOCIADO A LA GUIA
     Private Sub Actualizar_campo_guia(datos As comprobantes)
 
         Try
@@ -107,7 +112,50 @@ Public Class Sentencias_facturas
         Finally
             conex.Close()
         End Try
-
     End Sub
+
+    '----------------------------------------------------------------------------------------------------------------------------------
+    '------------------------------------------------------ D E L E T E ---------------------------------------------------------------
+
+    'Eliminar FACTURA
+    Public Function Eliminar_detalle_factura(ByVal datos As comprobantes) As Boolean
+        Dim estado As Boolean = True
+        'Detalle primero
+        Try
+            Conectar()
+            adaptador.DeleteCommand = New NpgsqlCommand("DELETE FROM detalle_factura WHERE id_det_factura = @id", conex)
+            adaptador.DeleteCommand.Parameters.Add("@id", NpgsqlTypes.NpgsqlDbType.Integer).Value = datos.Id_doc1
+            adaptador.DeleteCommand.Connection = conex
+            adaptador.DeleteCommand.ExecuteNonQuery()
+
+            'Luego el "encabezado"
+            Eliminar_factura(datos)
+
+        Catch ex As NpgsqlException
+            MessageBox.Show(ex.Message)
+            estado = False
+        Finally
+            cerrar()
+        End Try
+        Return estado
+
+    End Function
+
+    Private Sub Eliminar_factura(datos As comprobantes)
+        Try
+            Conectar()
+            adaptador.DeleteCommand = New NpgsqlCommand("DELETE FROM factura WHERE  id_factura = @id", conex)
+            adaptador.DeleteCommand.Parameters.Add("@id", NpgsqlTypes.NpgsqlDbType.Integer).Value = datos.Id_doc1
+            adaptador.DeleteCommand.Connection = conex
+            adaptador.DeleteCommand.ExecuteNonQuery()
+
+        Catch ex As NpgsqlException
+            MessageBox.Show(ex.Message)
+
+        Finally
+            cerrar()
+        End Try
+    End Sub
+
 
 End Class

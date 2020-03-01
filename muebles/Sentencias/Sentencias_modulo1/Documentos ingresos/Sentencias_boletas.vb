@@ -1,4 +1,5 @@
 ﻿
+Imports muebles
 Imports Npgsql
 
 Public Class Sentencias_boletas
@@ -55,6 +56,11 @@ Public Class Sentencias_boletas
             adaptador.UpdateCommand.Connection = conex
             adaptador.UpdateCommand.ExecuteNonQuery()
 
+            If datos.Id_docs21 <> datos.Id_doc1 Then
+                'Actualiza la id del detalle de la boleta
+                Actualiza_detalle_boleta(datos)
+            End If
+
         Catch ex As NpgsqlException
             MessageBox.Show(ex.Message)
             estado = False
@@ -64,4 +70,67 @@ Public Class Sentencias_boletas
         Return estado
     End Function
 
+    'ACTUALIZA  ID DETALLE BOLETA
+    Private Sub Actualiza_detalle_boleta(datos As comprobantes)
+
+        Try
+            Conectar()
+            adaptador.UpdateCommand = New NpgsqlCommand("UPDATE detalle_boleta SET id_det_boleta=@id_after)
+                                                        WHERE id_det_boleta=@id_before", conex)
+            adaptador.UpdateCommand.Parameters.Add("@id_after", NpgsqlTypes.NpgsqlDbType.Integer).Value = datos.Id_doc1
+            adaptador.UpdateCommand.Parameters.Add("@id_before", NpgsqlTypes.NpgsqlDbType.Integer).Value = datos.Id_docs21
+            conex.Open()
+            adaptador.UpdateCommand.Connection = conex
+            adaptador.UpdateCommand.ExecuteNonQuery()
+
+        Catch ex As NpgsqlException
+            MessageBox.Show(ex.Message)
+        Finally
+            conex.Close()
+        End Try
+    End Sub
+
+
+    '----------------------------------------------------------------------------------------------------------------------------------
+    '------------------------------------------------------ D E L E T E ---------------------------------------------------------------
+
+    'Eliminar BOLETA
+    Public Function Eliminar_detalle_bol(ByVal datos As comprobantes) As Boolean
+        Dim estado As Boolean = True
+        'Detalle primero
+        Try
+            Conectar()
+            adaptador.DeleteCommand = New NpgsqlCommand("DELETE FROM detalle_boleta WHERE id_det_boleta = @id", conex)
+            adaptador.DeleteCommand.Parameters.Add("@id", NpgsqlTypes.NpgsqlDbType.Integer).Value = datos.Id_doc1
+            adaptador.DeleteCommand.Connection = conex
+            adaptador.DeleteCommand.ExecuteNonQuery()
+
+            'Luego el "encabezado"
+            Eliminar_boleta(datos)
+
+        Catch ex As NpgsqlException
+            MessageBox.Show(ex.Message)
+            estado = False
+        Finally
+            cerrar()
+        End Try
+        Return estado
+
+    End Function
+
+    Private Sub Eliminar_boleta(datos As comprobantes)
+        Try
+            Conectar()
+            adaptador.DeleteCommand = New NpgsqlCommand("DELETE FROM boleta WHERE id_boleta = @id", conex)
+            adaptador.DeleteCommand.Parameters.Add("@id", NpgsqlTypes.NpgsqlDbType.Integer).Value = datos.Id_doc1
+            adaptador.DeleteCommand.Connection = conex
+            adaptador.DeleteCommand.ExecuteNonQuery()
+
+        Catch ex As NpgsqlException
+            MessageBox.Show(ex.Message)
+
+        Finally
+            cerrar()
+        End Try
+    End Sub
 End Class
